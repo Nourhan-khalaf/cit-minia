@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT MINIA</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+         <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>CIT</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="index.html#about">About Us</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="index.html#events">Events</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="index.html#contact">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About Us</a>
+                <a href="index.html#events">Events</a>
+                <a href="index.html#contact">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+  </section>
+
+     <!-- Scripts -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>AOS.init({ offset: 0 });</script>
+     <script>
+         function hamburg() {
+             document.querySelector(".dropdown").style.transform = "translateY(0px)";
+         }
+         function cancel() {
+             document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+         }
+     </script>
+
+<section class="board-section">
+    <h2 class="board-title" data-aos="fade-up">CIT BOARD 2024-2025</h2>
+    
+    <div class="slides-container" data-aos="zoom-in">
+      <div class="slides" id="slider">
+        <div class="slide active"><img src="group.jpg" alt="Group Photo"></div>
+        <div class="slide"><img src="president.jpg" alt="Media Committee"></div>
+        <div class="slide"><img src="media.jpg" alt="Media Committee"></div>
+        <div class="slide"><img src="hr.jpg" alt="Media Committee"></div>
+        <div class="slide"><img src="social.jpg" alt="Media Committee"></div>
+        <div class="slide"><img src="fr.jpg" alt="Media Committee"></div>
+        <div class="slide"><img src="pr.jpg" alt="Media Committee"></div>
+        <div class="slide"><img src="logistics.jpg" alt="Media Committee"></div>
+        <div class="slide"><img src="bot.jpg" alt="Media Committee"></div>
+        <div class="slide"><img src="channel.jpg" alt="Media Committee"></div>
+        <div class="slide"><img src="survay2.jpg" alt="Media Committee"></div>
+        <div class="slide"><img src="orphan2.jpg" alt="Media Committee"></div>
+        <div class="slide"><img src="convoy2.jpg" alt="Media Committee"></div>
+        <div class="slide"><img src="super2.jpg" alt="Media Committee"></div>
+        
+      </div>
+      <div class="slides-controls">
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </div>
+  </section>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".slide");
+  
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove("active");
+        if (i === index) slide.classList.add("active");
+      });
+    }
+  
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+  
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+  
+    
+    showSlide(currentSlide);
+  </script>
+  
+  
+    </main>
+
+     <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>CIT <span>MINIA</span></h2>
+        <p>Empowering future clinical pharmacists since 2014</p>
+      </div>
+  
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/16rDcyNxFv/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/citminia" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://youtube.com/@clinicalintegratedteam2758" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/company/clinical-integrated-team-cit-minia/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+        <p>&copy; 2025 CIT MINIA. All Rights Reserved.</p>
+        <p class="powered-by">Powered by <strong>Nourhan Khalaf</strong></p>
+      </div>
+</body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT MINIA</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  <main>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>CIT</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About Us</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#events">Events</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#contact">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#events">Events</a>
+                <a href="#contact">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="CIT-NEW-LOGO.png" alt="CIT Logo">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Clinical Integrated Team</h1>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    We're a registered non-governmental non-profit organization devoted to spreading awareness about clinical pharmacists' role in society.
+                </p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://youtube.com/@clinicalintegratedteam2758"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/share/16rDcyNxFv/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/company/clinical-integrated-team-cit-minia/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/citminia"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@cit.minia"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <button onclick="window.open('CIT OFFICIAL PROPOSAL1.pdf', '_blank')">Download Proposal</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <h2 class="about-title" data-aos="flip-up" data-aos-duration="1000">About Us</h2>
+        <div class="about-container">
+            <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img src="team.jpg" class="active" alt="team Slide 1">
+                        <img src="team2.jpg" alt="team Slide 2">
+                        <img src="team3.jpg" alt="team Slide 3">
+                        <img src="team4.jpg" alt="team Slide 4">
+                        <img src="team5.jpg" alt="Survey Slide 5">
+                    </div>
+                        <div class="slider-controls">
+                          <button class="prev">&#10094;</button>
+                          <button class="next">&#10095;</button>
+                        </div>
+                    </div>
+            </div>
+            <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
+                <p>
+                    Clinical Integrated Team (CIT) is a registered non-governmental non-profit student activity founded in 2014 at the Faculty of Pharmacy, Minia University. Our mission is to empower future clinical pharmacists and raise awareness about their vital role in healthcare.
+                </p>
+                <h3>📍 Established in October 2014</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats" id="stats">
+        <div class="stat-box">
+            <i class="fa-solid fa-user-group"></i>
+            <h3 class="counter" data-target="70">0</h3>
+            <p>Volunteers / Year</p>
+        </div>
+        <div class="stat-box">
+            <i class="fa-solid fa-chart-column"></i>
+            <h3 class="counter" data-target="35">0</h3>
+            <p>Events Organized</p>
+        </div>
+        <div class="stat-box">
+            <i class="fa-solid fa-building-columns"></i>
+            <h3 class="counter" data-target="5">0</h3>
+            <p>Universities</p>
+        </div>
+    </section>
+
+    <!-- Buttons Section -->
+    <section class="btns">
+        <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000"><button onclick="window.location.href='board.html'">BOARD</button></div>
+        <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000"><button  onclick="window.location.href='motm.html'">MOTM</button></div>
+        <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000"><button  onclick="window.location.href='botm.html'">BOTM</button></div>
+    </section>
+
+
+   <section class="events" id="events">
+    <h2 class="events-title" data-aos="fade-up">Our Events</h2>
+  
+
+    <div class="events-grid">
+      <!-- Survey -->
+      <div class="event-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="slider-wrapper">
+        <div class="slider">
+            <img src="survay.jpg" class="active" alt="Survey Slide 1">
+            <img src="survay3.jpg" alt="Survey Slide 2">
+            <img src="survay4.jpg" alt="Survey Slide 3">
+            <img src="survay5.jpg" alt="Survey Slide 4">
+            <img src="survay6.jpg" alt="Survey Slide 5">
+            <img src="survay7.jpg" alt="Survey Slide 6">
+            <img src="survay8.jpg" alt="Survey Slide 7">
+            <img src="survay9.jpg" alt="Survey Slide 8">
+            <img src="survay10.jpg" alt="Survey Slide 9">
+            <img src="survay11.jpg" alt="Survey Slide 10">
+        </div>
+            <div class="slider-controls">
+              <button class="prev">&#10094;</button>
+              <button class="next">&#10095;</button>
+            </div>
+        </div>
+        <h3>Survey</h3>
+        <p>Data collection and analysis Using them to provide awareness campaigns caring with people health</p>
+        <div class="event-stats">
+          <div><span class="counter" data-target="7">0</span> Campaigns</div>
+          <div><span class="counter" data-target="7500">0</span> People Impacted</div>
+        </div>
+      </div>
+  
+      <!-- Medical Convoys -->
+      <div class="event-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img src="convoy.jpg" class="active" alt="convoy Slide 1">
+                <img src="convoy3.jpg" alt="convoy Slide 2">
+                <img src="convoy4.jpg" alt="convoy Slide 3">
+                <img src="convoy5.jpg" alt="convoy Slide 4">
+                <img src="convoy6.jpg" alt="convoy Slide 5">
+                <img src="convoy7.jpg" alt="convoy Slide 6">
+                <img src="convoy8.jpg" alt="convoy Slide 7">
+                <img src="convoy9.jpg" alt="convoy Slide 8">
+                <img src="convoy10.jpg" alt="convoy Slide 9">
+                <img src="convoy11.jpg" alt="convoy Slide 10">
+                <img src="convoy12.jpg" alt="convoy Slide 11">
+            </div>
+                <div class="slider-controls">
+                  <button class="prev">&#10094;</button>
+                  <button class="next">&#10095;</button>
+                </div>
+            </div>
+        <h3>Medical Convoys</h3>
+        <p>Established to provide better health care for people with low-income.</p>
+         <P> - Medical examinations with a symbolic price</P> 
+          <p>- Free medications</p> 
+        <div class="event-stats">
+          <div><span class="counter" data-target="9">0</span> Convoys</div>
+          <div><span class="counter" data-target="2500">0</span> Beneficiaries</div>
+        </div>
+      </div>
+  
+      <!-- Orphans' Day -->
+      <div class="event-card" data-aos="zoom-in" data-aos-delay="400">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img src="orphan.jpg" class="active" alt="orphan Slide 1">
+                <img src="orphan3.jpg" alt="orphan Slide 2">
+                <img src="orphan4.jpg" alt="orphan Slide 3">
+                <img src="orphan5.jpg" alt="orphan Slide 4">
+                <img src="orphan6.jpg" alt="orphan Slide 5">
+                <img src="orphan7.jpg" alt="orphan Slide 6">
+                <img src="orphan8.jpg" alt="orphan Slide 7">
+                
+            </div>
+                <div class="slider-controls">
+                  <button class="prev">&#10094;</button>
+                  <button class="next">&#10095;</button>
+                </div>
+            </div>
+        <h3>Orphans' Day</h3>
+        <p>Charitable project provides:</p>
+        <P>-Regular visits for orphans' shelters</P> 
+        <p>-Celebrating with them in the orphans' day</p>
+        <div class="event-stats">
+          <div><span class="counter" data-target="7">0</span> Events</div>
+          <div><span class="counter" data-target="200">0</span> Children Impacted</div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Super Clinical -->
+    <div class="super-clinical-card" data-aos="zoom-in" data-aos-delay="500">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img src="super.jpg" class="active" alt="super Slide 1">
+                <img src="super3.jpg" alt="convoy Slide 2">
+                <img src="super4.jpg" alt="convoy Slide 3">
+                <img src="super5.jpg" alt="convoy Slide 4">
+                <img src="super6.jpg" alt="convoy Slide 5">
+                <img src="super7.jpg" alt="convoy Slide 6">
+                <img src="super8.jpg" alt="convoy Slide 7">
+                <img src="super9.jpg" alt="convoy Slide 8">
+                <img src="super10.jpg" alt="convoy Slide 9">
+                <img src="super11.jpg" alt="convoy Slide 10">
+                <img src="super12.jpg" alt="convoy Slide 11">
+                <img src="super13.jpg" alt="convoy Slide 11">
+                <img src="super14.jpg" alt="convoy Slide 11">
+                <img src="super15.jpg" alt="convoy Slide 11">
+                <img src="super16.jpg" alt="convoy Slide 11">
+                <img src="super17.jpg" alt="convoy Slide 11">
+                <img src="super18.jpg" alt="convoy Slide 11">
+                <img src="super19.jpg" alt="convoy Slide 11">
+                <img src="super20.jpg" alt="convoy Slide 11">
+                <img src="super21.jpg" alt="convoy Slide 11">
+                <img src="super22.jpg" alt="convoy Slide 11">
+                <img src="super23.jpg" alt="convoy Slide 11">
+            </div>
+                <div class="slider-controls">
+                  <button class="prev">&#10094;</button>
+                  <button class="next">&#10095;</button>
+                </div>
+            </div>
+      <h3>Super Clinical</h3>
+      <p>
+        The first scientific conference to be established under supervision of a student activity
+        in Faculty of Pharmacy, Minya University was under CIT supervision in March, 2017.
+      </p>
+      <div class="super-stats">
+        <div><span class="counter" data-target="6">0</span> Conferences</div>
+        <div><span class="counter" data-target="7">0</span> Job Fairs</div>
+        <div><span class="counter" data-target="55">0</span>Interactive Sessions</div>
+        <div><span class="counter" data-target="30">0</span> Online Sessions</div>
+        <div><span class="counter" data-target="450">0</span> Clinical Trainees</div>
+        <div><span class="counter" data-target="1500">0</span> Attendees</div>
+      </div>
+      <p>
+        Through Super Clinical, CIT bridges the gap between academic learning and professional
+        practice, empowering future pharmacists with the knowledge, skills, and opportunities
+        to excel in the field.
+      </p>
+    </div>
+    </section>
+  
+  
+
+
+   <!-- Contact Section -->
+    <section class="contact" id="contact">
+    <h2 class="contact-title" data-aos="fade-up">Contact Us</h2>
+  
+    <div class="contact-container">
+  
+      <!-- Contact Info Cards -->
+      <div class="contact-grid">
+        <!-- Email Card -->
+    <div class="contact-card" data-aos="zoom-in" data-aos-delay="100">
+    <i class="fa-solid fa-envelope contact-icon"></i>
+    <h3>Email</h3>
+    <p>citminya@gmail.com</p>
+    </div>
+
+    <!-- Phone Card -->
+    <div class="contact-card" data-aos="zoom-in" data-aos-delay="200">
+    <i class="fa-solid fa-phone contact-icon"></i>
+    <h3>Phone</h3>
+    <p>+20102 907 6027</p>
+    </div>
+  
+      <!-- Contact Form -->
+      <form id="google-form" data-aos="fade-left">
+        <input type="text" name="entry.201892927" placeholder="Your Name" required />
+        <input type="email" name="entry.1918166851" placeholder="Your Email" required />
+        <textarea name="entry.689166194" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+        <p id="response" class="response-message">Message sent successfully ✅</p>
+      </form>
+      
+      
+      
+  </main>
+      
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>CIT <span>MINIA</span></h2>
+        <p>Empowering future clinical pharmacists since 2014</p>
+      </div>
+  
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/16rDcyNxFv/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/citminia" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://youtube.com/@clinicalintegratedteam2758" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/company/clinical-integrated-team-cit-minia/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+        <p>&copy; 2025 CIT MINIA. All Rights Reserved.</p>
+        <p class="powered-by">Powered by <strong>Nourhan Khalaf</strong></p>
+      </div>
+  </footer>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ offset: 0 });
+
+function hamburg() {
+    document.querySelector(".dropdown").style.transform = "translateY(0px)";
+}
+function cancel() {
+    document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+}
+
+const counters = document.querySelectorAll(".counter");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const counter = entry.target;
+      let current = 0;
+      const target = +counter.getAttribute("data-target");
+      const increment = Math.ceil(target / 100);
+
+      const update = () => {
+        current += increment;
+        if (current < target) {
+          counter.innerText = current;
+          requestAnimationFrame(update);
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      update();
+    }
+  });
+}, { threshold: 0.5 });
+
+counters.forEach(counter => observer.observe(counter));
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+document.querySelector(this.getAttribute('href')).scrollIntoView({
+  behavior: 'smooth'
+});
+});
+});
+
+const form = document.getElementById('google-form');
+const responseMsg = document.getElementById('response');
+
+form.addEventListener('submit', function (e) {
+e.preventDefault(); 
+
+const formData = new FormData(form);
+
+fetch('https://docs.google.com/forms/d/e/1FAIpQLSdURNPykLC-C8VkgR7Y74500b_Bq0JqCaDUcQDmQ5GQhxsNoA/formResponse', {
+method: 'POST',
+mode: 'no-cors',
+body: formData
+})
+.then(() => {
+form.reset(); 
+responseMsg.style.display = 'block';
+setTimeout(() => {
+  responseMsg.style.display = 'none'; 
+}, 5000);
+})
+.catch(() => {
+alert("Failed to send. Please try again.");
+});
+});
+
+document.querySelectorAll('.slider-wrapper').forEach(wrapper => {
+  const slider = wrapper.querySelector('.slider');
+  const images = slider.querySelectorAll('img');
+  const nextBtn = wrapper.querySelector('.next');
+  const prevBtn = wrapper.querySelector('.prev');
+  let currentIndex = 0;
+
+  const showImage = index => {
+    images.forEach((img, i) => img.classList.toggle('active', i === index));
+  };
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  });
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+  });
+
+  showImage(currentIndex);
+});
+
+  
+
+  </script>
+
+</body>
+
+
+  
+</html>

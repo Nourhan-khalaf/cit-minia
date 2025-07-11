@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT MINIA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>CIT</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="index.html#about">About Us</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="index.html#events">Events</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="index.html#contact">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About Us</a>
+                <a href="index.html#events">Events</a>
+                <a href="index.html#contact">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+<section class="botm-section">
+    <h2 class="botm-title" data-aos="fade-up">Board of the Month</h2>
+  
+    <!-- Tabs for Months -->
+    <div class="month-tabs">
+      <button class="tab-btn active" data-month="October">October</button>
+      <button class="tab-btn" data-month="November">November</button>
+      <button class="tab-btn" data-month="December">December</button>
+      <button class="tab-btn" data-month="February">February</button>
+      <button class="tab-btn" data-month="March">March</button>
+      <button class="tab-btn" data-month="April">April</button>
+      <button class="tab-btn" data-month="May">May</button>
+      
+    </div>
+  
+    <!-- Container for Board -->
+    <div class="botm-container">
+  
+      <!-- October -->
+      <div class="botm-month active" id="October">
+        <div class="botm-card" data-aos="zoom-in">
+          <img src="october-botm.jpg" alt="October">
+        </div>
+      </div>
+  
+      <!-- November -->
+      <div class="botm-month" id="November">
+        <div class="botm-card" data-aos="zoom-in">
+          <img src="nov-botm.jpg" alt="November">
+        </div>
+      </div>
+  
+      <!-- December -->
+      <div class="botm-month" id="December">
+        <div class="botm-card" data-aos="zoom-in">
+          <img src="dec-botm.jpg" alt="December">
+        </div>
+      </div>
+
+       <!-- February -->
+       <div class="botm-month" id="February">
+        <div class="botm-card" data-aos="zoom-in">
+          <img src="feb-botm.jpg" alt="February">
+        </div>
+      </div>
+
+      <!-- March -->
+      <div class="botm-month" id="March">
+        <div class="botm-card" data-aos="zoom-in">
+          <img src="mar-botm.jpg" alt="March">
+        </div>
+      </div>
+
+      <!-- April -->
+      <div class="botm-month" id="April">
+        <div class="botm-card" data-aos="zoom-in">
+          <img src="april-botm.jpg" alt="April">
+        </div>
+      </div>
+
+      <!-- May -->
+      <div class="botm-month" id="May">
+        <div class="botm-card" data-aos="zoom-in">
+          <img src="may-botm.jpg" alt="May">
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+
+    AOS.init({ offset: 0 });
+    
+    function hamburg() {
+        document.querySelector(".dropdown").style.transform = "translateY(0px)";
+    }
+    function cancel() {
+        document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+    }
+    
+            const tabs = document.querySelectorAll('.tab-btn');
+    const months = document.querySelectorAll('.botm-month');
+    
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active from all tabs
+        tabs.forEach(btn => btn.classList.remove('active'));
+        // Hide all months
+        months.forEach(month => month.classList.remove('active'));
+    
+        // Add active to clicked tab
+        tab.classList.add('active');
+    
+        // Show the selected month
+        const target = tab.getAttribute('data-month');
+        document.getElementById(target).classList.add('active');
+      });
+    });
+          </script>
+    
+  
+  
+  
+  
+
+    </main>
+    
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>CIT <span>MINIA</span></h2>
+        <p>Empowering future clinical pharmacists since 2014</p>
+      </div>
+  
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/16rDcyNxFv/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/citminia" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://youtube.com/@clinicalintegratedteam2758" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/company/clinical-integrated-team-cit-minia/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+        <p>&copy; 2025 CIT MINIA. All Rights Reserved.</p>
+        <p class="powered-by">Powered by <strong>Nourhan Khalaf</strong></p>
+      </div>
+</body>
+</html>
